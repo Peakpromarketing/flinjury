@@ -414,7 +414,18 @@ window.$consentState={analytics,marketing};
 </div>
 </form>
 <script id="Process_HeaderV1" type="text/javascript" style="display:none;">window.Process&&Process.Page(['Process_HeaderV1','HeaderV1_1','HeaderV1_2','HeaderV1_3']);</script>
-</header>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var mnuBtn = document.querySelector('.mnu-btn');
+    var header = document.querySelector('#HeaderZone') || document.querySelector('.hdr');
+    if (mnuBtn && header) {
+      mnuBtn.addEventListener('click', function() {
+        header.classList.toggle('mnu-opn');
+      });
+    }
+  });
+</script>
+	</header>
 	<main id="MainZone"><section class="mstg s6 mstg-tls vid-bg-tls dk-bg bg-image" id="MainstageS6Alt" data-onvisible="anm">
 	
 	
