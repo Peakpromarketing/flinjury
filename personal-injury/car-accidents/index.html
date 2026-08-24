@@ -579,32 +579,29 @@ window.$consentState={analytics,marketing};
 		
 </div>
 <script id="Process_ColumnContentExpand" type="text/javascript" style="display:none;">window.Process&&Process.Page(['Process_ColumnContentExpand','ColumnContentExpand_1','ColumnContentExpand_2','ColumnContentExpand_3','ColumnContentExpand_4']);</script>
-580: </div>
-581: <script id="Process_ColumnContentExpand" type="text/javascript" style="display:none;">window.Process&&Process.Page(['Process_ColumnContentExpand','ColumnContentExpand_1','ColumnContentExpand_2','ColumnContentExpand_3','ColumnContentExpand_4']);</script>
-582: <script>
-583:   document.addEventListener('DOMContentLoaded', function() {
-584:     var readMoreBtns = document.querySelectorAll('.rd-mr, [data-role="btn"].rd-mr');
-585:     readMoreBtns.forEach(function(btn) {
-586:       btn.addEventListener('click', function(e) {
-587:         e.preventDefault();
-588:         var panel = document.getElementById('ColumnContentExpandExpanded');
-589:         if (panel) {
-590:           panel.classList.toggle('sld-opn');
-591:           btn.classList.toggle('xpnded');
-592:           
-593:           if (panel.classList.contains('sld-opn')) {
-594:             panel.style.maxHeight = 'none';
-595:             panel.style.display = 'block';
-596:           } else {
-597:             panel.style.maxHeight = '';
-598:             panel.style.display = '';
-599:           }
-600:         }
-601:       });
-602:     });
-603:   });
-604: </script>
-605: </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var readMoreBtns = document.querySelectorAll('.rd-mr, [data-role="btn"].rd-mr');
+    readMoreBtns.forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        var panel = document.getElementById('ColumnContentExpandExpanded');
+        if (panel) {
+          panel.classList.toggle('sld-opn');
+          btn.classList.toggle('xpnded');
+          
+          if (panel.classList.contains('sld-opn')) {
+            panel.style.maxHeight = 'none';
+            panel.style.display = 'block';
+          } else {
+            panel.style.maxHeight = '';
+            panel.style.display = '';
+          }
+        }
+      });
+    });
+  });
+</script>
 		</div>
 		<div class="sd-zn three-8ths" id="SideZone"><aside class="sd-nv v1" id="SideNavV1">
 	
