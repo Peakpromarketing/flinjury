@@ -51,7 +51,17 @@ window.$consentState={analytics,marketing};
     }
   }
 </style>
-</head>
+<style>
+  /* Hide Scorpion mobile/floating contact bar */
+  #HeaderV1MultiButton,
+  .mbl-scl,
+  [data-connect="true"],
+  span[data-src*="scorpion.co"] {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+</style></head>
 <body class="overlap" data-config="tmbvm4nn._7l" data-id="22357837">
 	<header id="HeaderZone"><form id="Form_HeaderV1" method="post" enctype="multipart/form-data" action="https://www.flinjury.com/" data-search="1">
 <input type="hidden" name="_m_" value="HeaderV1">
@@ -1414,9 +1424,6 @@ Back Down
 					<li class="mrg_lt-70" role="menuitem">
 						<a class="clr-swp" href="privacy-policy/index.html"><u>Privacy Policy</u></a>
 					</li>
-					<li class="mrg_lt-70" role="menuitem">
-						<a class="clr-swp" href="site-search/index.html"><u>Site Search</u></a>
-					</li>
 				</ul>
 			</nav>
 		</small>
@@ -1439,9 +1446,6 @@ webkitRequestAnimationFrame || msRequestAnimationFrame;
 if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
 else window.addEventListener('load', loadDeferredStyles);
 </script>
-<script type="text/javascript" src="/cms/includes/g5v3gviydsm.2601221548255.js" defer data-require='["a/bootstrap-passive","svg","p/scroll","p/utils","p/phone-format","audioeye"]'></script>
-<script type="text/javascript" src="../analytics.scorpion.co/sa.js" defer></script>
-<span data-src="https://api.scorpion.co/platformapp/connect/s/bootstrap.6acb82f3-71a3-0bae-ebd1-0947c1cedcf7.js" data-connect="true"></span>
 <script>
 document.write=function(text){
   if(!text||!text.trim()){
