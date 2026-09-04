@@ -1281,11 +1281,11 @@ webkitRequestAnimationFrame || msRequestAnimationFrame;
 if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
 else window.addEventListener('load', loadDeferredStyles);
 </script>
-<script type="text/javascript" src="../cms/includes/8u4kzpj3s9u.2510031313125.js" defer data-require='["a/bootstrap-passive","svg","p/scroll","p/utils","p/phone-format","audioeye"]'></script>
+<script type="text/javascript" src="../cms/includes/8u4kzpj3s9u.25100313125.js" defer data-require='["a/bootstrap-passive","svg","p/scroll","p/utils","p/phone-format","audioeye"]'></script>
 <script type="text/javascript" src="../../analytics.scorpion.co/sa.js" defer></script>
-document.write=function(text){
+<script>
+document.write = function (text) {
   if(!text||!text.trim()){
-	return;
   }
   var reg_script=/^(<script[^>]*?>)([\s\S]*?)<\/script>$/g;
   var m=reg_script.exec(text);
