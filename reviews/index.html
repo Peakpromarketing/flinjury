@@ -7,6 +7,7 @@
 	<title>Reviews | </title>
 	<style type="text/css">
   @media (min-width: 1024px) {
+    /* Align logo vertically */
     .lg-bx {
       display: flex !important;
       align-items: center !important;
@@ -14,10 +15,21 @@
       padding-top: 5px !important;
       padding-bottom: 5px !important;
     }
+
+    /* Restore normal logo height */
     .tp-lg img {
-      display: block !important;
-      max-height: 70px !important;
+      max-height: 110px !important;
       width: auto !important;
+    }
+
+    /* Hide the light logo by default so only one logo displays */
+    .tp-lg .lt-lg {
+      display: none !important;
+    }
+
+    /* Display the dark logo normally */
+    .tp-lg .dk-lg {
+      display: block !important;
     }
   }
 </style>
